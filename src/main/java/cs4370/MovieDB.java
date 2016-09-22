@@ -1,4 +1,4 @@
-
+package cs4370;
 /*****************************************************************************************
  * @file  MovieDB.java
  *
@@ -22,7 +22,7 @@ class MovieDB
     {
 	out.println ();
 
-	Table movie = new Table ("movie", "title year length genre studioName producerNo",
+	/*	Table movie = new Table ("movie", "title year length genre studioName producerNo",
 				 "String Integer Integer String String Integer", "title year");
 
 	Table cinema = new Table ("cinema", "title year length genre studioName producerNo",
@@ -38,7 +38,53 @@ class MovieDB
 				     "Integer String String Float", "certNo");
 
 	Table studio = new Table ("studio", "name address presNo",
-				  "String String Integer", "name");
+				  "String String Integer", "name");*/
+
+	String [] attributes_movie = {"title", "year", "length", "genre", "studioName", "producerNo"};
+	String [] attributes_cinema = {"title","year","length","genre","studioName","producerNo"};	
+	String [] attributes_movieStar = {"name","address","gender","birthdate"};
+	String [] attributes_starsIn = {"movieTitle","movieYear","starName"};
+	String [] attributes_movieExec = {"certNo", "name","address","fee"};
+	String [] attributes_studio =  {"name","address","presNo"};
+	    
+	Class [] domains_movie = {String.class,Integer.class,Integer.class,String.class,String.class, Integer.class};
+	Class [] domains_cinema = {String.class, Integer.class, Integer.class, String.class, String.class, Integer.class};
+	Class [] domains_movieStar = {String.class, String.class, Character.class, String.class};
+	Class [] domains_starsIn = {String.class, Integer.class, String.class};
+	Class [] domains_movieExec = {Integer.class, String.class, String.class, Float.class };
+	Class [] domains_studio = {String.class, String.class, Integer.class};
+	
+	String [] key_movie = {"title","year"};
+	String [] key_cinema = {"title","year"};
+	String [] key_movieStar = {"name"};
+	String [] key_starsIn = {"movieTitle","movieYear","starName"};
+	String [] key_movieExec = {"certNo"};
+	String [] key_studio = {"name"};
+
+	/*Table movie = new Table ("movie", "title year length genre studioName producerNo",
+				 "String Integer Integer String String Integer", "title year");
+
+	Table cinema = new Table ("cinema", "title year length genre studioName producerNo",
+				  "String Integer Integer String String Integer", "title year");
+
+	Table movieStar = new Table ("movieStar", "name address gender birthdate",
+				     "String String Character String", "name");
+
+	Table starsIn = new Table ("starsIn", "movieTitle movieYear starName",
+				   "String Integer String", "movieTitle movieYear starName");
+
+	Table movieExec = new Table ("movieExec", "certNo name address fee",
+				     "Integer String String Float", "certNo");
+
+	Table studio = new Table ("studio", "name address presNo",
+	"String String Integer", "name");*/
+
+	Table movie = new Table("movie",attributes_movie,domains_movie,key_movie);
+	Table cinema = new Table("cinema",attributes_cinema,domains_cinema,key_cinema);
+	Table movieStar = new Table("movieStar",attributes_movieStar,domains_movieStar,key_movieStar);
+	Table starsIn = new Table("starsIn",attributes_starsIn,domains_starsIn,key_starsIn);
+	Table movieExec = new Table("movieExec",attributes_movieExec,domains_movieExec,key_movieExec);
+	Table studio = new Table("studio",attributes_studio,domains_studio,key_studio);
 
 	Comparable [] film0 = { "Star_Wars", 1977, 124, "sciFi", "Fox", 12345 };
 	Comparable [] film1 = { "Star_Wars_2", 1980, 124, "sciFi", "Fox", 12345 };
@@ -50,6 +96,8 @@ class MovieDB
 	movie.insert (film2);
 	movie.insert (film3);
 	movie.print ();
+	System.out.println("movie.printIndex():");
+	movie.printIndex();
 
 	Comparable [] film4 = { "Galaxy_Quest", 1999, 104, "comedy", "DreamWorks", 67890 };
 	out.println ();
@@ -57,6 +105,8 @@ class MovieDB
 	cinema.insert (film3);
 	cinema.insert (film4);
 	cinema.print ();
+	System.out.println("cinema.printIndex():");
+	cinema.printIndex();
 
 	Comparable [] star0 = { "Carrie_Fisher", "Hollywood", 'F', "9/9/99" };
 	Comparable [] star1 = { "Mark_Hamill", "Brentwood", 'M', "8/8/88" };
@@ -66,17 +116,23 @@ class MovieDB
 	movieStar.insert (star1);
 	movieStar.insert (star2);
 	movieStar.print ();
+	System.out.println("movieStar.printIndex():");
+	movieStar.printIndex();
 
 	Comparable [] cast0 = { "Star_Wars", 1977, "Carrie_Fisher" };
 	out.println ();
 	starsIn.insert (cast0);
 	starsIn.print ();
+	System.out.println("starsIn.printIndex():");
+	starsIn.printIndex();
 
 	Comparable [] exec0 = { 9999, "S_Spielberg", "Hollywood", 10000.00 };
 	out.println ();
 	movieExec.insert (exec0);
 	movieExec.print ();
-
+	System.out.println("movieExec.printIndex():");
+	movieExec.printIndex();
+	
 	Comparable [] studio0 = { "Fox", "Los_Angeles", 7777 };
 	Comparable [] studio1 = { "Universal", "Universal_City", 8888 };
 	Comparable [] studio2 = { "DreamWorks", "Universal_City", 9999 };
@@ -85,7 +141,9 @@ class MovieDB
 	studio.insert (studio1);
 	studio.insert (studio2);
 	studio.print ();
-
+	System.out.println("studio.printIndex():");
+	studio.printIndex();
+	/*
 	System.out.println("Going to start saving.");
 	
 	movie.save ();
@@ -94,6 +152,7 @@ class MovieDB
 	starsIn.save ();
 	movieExec.save ();
 	studio.save ();
+	*/
 
 	movieStar.printIndex ();
 
@@ -104,18 +163,18 @@ class MovieDB
 	t_project.print ();
 
 	//--------------------- select: equals, &&
-
+	/*
 	out.println ();
 	Table t_select = movie.select (t -> t[movie.col("title")].equals ("Star_Wars") &&
 				       t[movie.col("year")].equals (1977));
 	t_select.print ();
-
+	*/
 	//--------------------- select: <
-
+	/*
 	out.println ();
 	Table t_select2 = movie.select (t -> (Integer) t[movie.col("year")] < 1980);
 	t_select2.print ();
-
+	*/
 	//--------------------- indexed select: key
 
 	out.println ();
@@ -140,11 +199,22 @@ class MovieDB
 	Table t_join = movie.join ("studioName", "name", studio);
 	t_join.print ();
 
+	out.println("index print after join");
+	t_join.printIndex();
+	
+
+	/*
+	out.println ();
+	Table t_iselectjoin = t_join.select (new KeyType ("7777"));
+	t_iselectjoin.print ();
+	*/
 	//--------------------- natural join: movie JOIN studio
 
 	out.println ();
 	Table t_join2 = movie.join (cinema);
 	t_join2.print ();
+
+	
 
     } // main
 

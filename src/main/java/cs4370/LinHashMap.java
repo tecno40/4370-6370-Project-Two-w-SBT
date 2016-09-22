@@ -38,15 +38,15 @@ public class LinHashMap <K, V>
         int    nKeys;
         K []   key;
         V []   value;
-        Bucket next;
+        Bucket next = null;
+        Bucket activeBucket;
 
         @SuppressWarnings("unchecked")
-        Bucket (Bucket n)
+        Bucket ()
         {
             nKeys = 0;
             key   = (K []) Array.newInstance (classK, SLOTS);
             value = (V []) Array.newInstance (classV, SLOTS);
-            next  = n;
         } // constructor
     } // Bucket inner class
 
@@ -70,34 +70,14 @@ public class LinHashMap <K, V>
      */
     private int split = 0;
 
-    
-    final class MyEntry<K, V> implements Map.Entry<K, V> {
-        private final K key;
-        private V value;
+    private double loadFactor = 0.75;
 
-        public MyEntry(K key, V value) {
-            this.key = key;
-            this.value = value;
-        }
+    private int itemsInserted = 0;
 
-        @Override
-        public K getKey() {
-            return key;
-        }
+    private Bucket newBucket, insertionBucket, activeBucket;
 
-        @Override
-        public V getValue() {
-            return value;
-        }
+    //private int capacity;
 
-        @Override
-        public V setValue(V value) {
-            V old = this.value;
-            this.value = value;
-            return old;
-        }
-    }
-    
     /********************************************************************************
      * Construct a hash table that uses Linear Hashing.
      * @param classK    the class for keys (K)
@@ -111,9 +91,12 @@ public class LinHashMap <K, V>
         hTable = new ArrayList <> ();
         mod1   = 4;                        // initSize;
         mod2   = 2 * mod1;
+        //capacity = mod1;
 
         for (int i = 0; i < mod1; i++) {
-            hTable.add(i, new Bucket(null));
+            newBucket = new Bucket();
+            newBucket.activeBucket = newBucket;
+            hTable.add(i, newBucket);
         }
     } // constructor
 
@@ -125,9 +108,7 @@ public class LinHashMap <K, V>
     {
         List<K> keyList = new ArrayList();
         List<V> valueList = new ArrayList();
-        Map.Entry<K,V> entry=null;
-        //Map <K, V> map;
-        Set <Map.Entry <K, V>> enSet = new HashSet <> ();
+        Map <K, V> map = new HashMap<K, V> ();
 
         for(int i = 0; i < hTable.size(); i++) {
             Bucket currentBucket = hTable.get(i);
@@ -141,13 +122,9 @@ public class LinHashMap <K, V>
         }
 
         for(int i = 0; i < keyList.size(); i++){
-            out.println("Add ("+keyList.get(i)+","+valueList.get(i)+")");
-            entry=new AbstractMap.SimpleEntry<K,V>(keyList.get(i), valueList.get(i));
-            enSet.add(entry);
+            map.put(keyList.get(i), valueList.get(i));
         }
-        
-
-        return enSet;
+        return map.entrySet();
     } // entrySet
 
     /********************************************************************************
@@ -157,55 +134,22 @@ public class LinHashMap <K, V>
      */
     public V get (Object key)
     {
-        int indexHash = h (key);
-
+        count++;
+        int indexHash = h(key);
+        if (indexHash < split) {
+            indexHash = h2(key);
+        }
         Bucket currentBucket = hTable.get(indexHash);
-        while(currentBucket != null) {
+        while (currentBucket != null) {
             for (int i = 0; i < currentBucket.nKeys; i++) {
-                if (currentBucket.key[i] == key) {
+                if (currentBucket.key[i].toString().equalsIgnoreCase(key.toString())) {
                     return currentBucket.value[i];
                 }
             }
             currentBucket = currentBucket.next;
         }
-        count++;
         return null;
     } // get
-
-    /********************************************************************************
-     * Given the key, look up the bucket it is in
-     * @param key  the key used for look up
-     * @return  the bucket associated with the key
-     */
-    private Bucket lookUpBucket(Object key) {
-        int indexHash = h (key);
-
-        Bucket currentBucket = hTable.get(indexHash);
-        while(currentBucket != null) {
-            for (int i = 0; i < currentBucket.nKeys; i++) {
-                if (currentBucket.key[i] == key) {
-                    return currentBucket;
-                }
-            }
-            currentBucket = currentBucket.next;
-        }
-        return null;
-    }
-
-    /********************************************************************************
-     * Given the bucket and key, look up the index
-     * @param bucket the bucket the key is in
-     * @param key  the key used for look up
-     * @return  the index of the key
-     */
-    private int lookUpIndex(Bucket bucket, Object key) {
-        for (int i = 0; i < bucket.nKeys; i++) {
-            if (bucket.key[i] == key) {
-                return i;
-            }
-        }
-        return -1;
-    }
 
     /********************************************************************************
      * Put the key-value pair in the hash table.
@@ -215,27 +159,73 @@ public class LinHashMap <K, V>
      */
     public V put (K key, V value)
     {
+        activeBucket = hTable.get(split);  //get the bucket pointed to by the split value.
+
         int indexHash = h (key);
+        if (indexHash < split) {
+            indexHash = h2 (key);
+        }
         out.println ("LinearHashMap.put: key = " + key + ", h() = " + indexHash + ", value = " + value);
 
-        Bucket currentBucket = hTable.get(indexHash);
-        if(get(key) == null) { // not duplicate key
-            if (currentBucket.nKeys == 4) { // if the current bucket is full
-                Bucket bucket = new Bucket(currentBucket);
-                split++;
-                hTable.set(indexHash, bucket);
-                currentBucket = bucket;
+        insertionBucket = hTable.get(indexHash);  //insertion bucket
+
+        if (insertionBucket.nKeys == SLOTS) {
+            newBucket = new Bucket();
+            newBucket.activeBucket = newBucket;
+            hTable.add(newBucket);
+            reallocate(activeBucket);
+
+            //increase split
+            split++;
+            if ( split == mod1) {
+                split = 0;
+                mod1 = mod1 * 2;
+                mod2 = mod1 * 2;
             }
-            insertTuple(key, value, currentBucket, currentBucket.nKeys);
-            currentBucket.nKeys++;
-        } else { // if duplicate key, find bucket and index, then insert new value in correct location
-            Bucket bucket = lookUpBucket(key);
-            int index = lookUpIndex(bucket, key);
-            insertTuple(key, value, bucket, index);
         }
-        count--;
+        insertionBucket = hTable.get(indexHash);
+        insertAtInsertionBucket(key, value);
+        itemsInserted++;
         return null;
     } // put
+
+    /*
+     * Adds a key, value pair at the insertion bucket, adding an overflow bucket if necessary.
+     */
+    private void insertAtInsertionBucket(K key, V value){
+
+        if (insertionBucket.activeBucket.nKeys == SLOTS) { //create overflow bucket since insertion bucket is full
+            newBucket = new Bucket();
+            insertionBucket.activeBucket.next = newBucket;
+            insertionBucket.activeBucket = newBucket;
+        }
+        //Now insert value and increment counter.
+        insertTuple(key, value, insertionBucket.activeBucket, insertionBucket.activeBucket.nKeys);
+        insertionBucket.activeBucket.nKeys++;
+    }
+
+    /* This method splits a bucket and distributes the items to existing buckets based on the new modulus.
+     * @param: The bucket to be split and replaced by the new bucket with increased modulus.
+     */
+    private void reallocate(Bucket splitBucket) {
+
+        //replace the split bucket with a new bucket.
+        newBucket = new Bucket();
+        newBucket.activeBucket = newBucket;
+        hTable.set(split, newBucket);
+
+        while (splitBucket != null) {
+            for (int i = 0; i < splitBucket.nKeys; i++) {
+                int indexHash = h2(splitBucket.key[i]);  //by high resolution
+                if (indexHash > hTable.size()) {
+                    indexHash = h(splitBucket.key[i]);
+                }
+                insertionBucket = hTable.get(indexHash);
+                insertAtInsertionBucket(splitBucket.key[i], splitBucket.value[i]);
+            }
+            splitBucket = splitBucket.next;
+        }
+    }
 
     /********************************************************************************
      * Put the key-value pair in the bucket at index.
@@ -261,57 +251,39 @@ public class LinHashMap <K, V>
      * Print the hash table.
      */
     private void print ()
+
     {
-        int overflowCt=0;
-        boolean firstValue=false;
-        
-        out.println ("");
-        out.println ("");
+
         out.println ("Hash Table (Linear Hashing)");
-        out.println ("Format: (key,value)");
+
         out.println ("-------------------------------------------");
 
- 
-        for(int i = 0; i < hTable.size(); i++) {
-            Bucket currentBucket = hTable.get(i);
-            
-            if (currentBucket.nKeys==0)
-            {
-                out.println("Bucket "+i+": Empty");
-            }
-            else
-            {
-                out.println("Bucket "+i+": Main");
-            }
-            firstValue=true;
-            overflowCt=0;
-            
-           while(currentBucket != null) {
-               if (!firstValue)
-               {
-                   out.println("          Overflow "+overflowCt);
-               }
-               else
-               {
-                   firstValue=false;
-               }
-               overflowCt++;
-                for (int j = 0; j < currentBucket.nKeys; j++) {
-                     out.println("          ("+currentBucket.key[j]+","+currentBucket.value[j]+")");
-                 }
-                 currentBucket=currentBucket.next;
-           }
-            
-            if (firstValue)
-            {
-                out.println("");
-            }
+        
+
+        for(int i = 0; i < hTable.size(); i++) { // Iterate through all buckets and print contents
+
+        out.print("BUCKET "+i+ " --> ");
+
+        for(Bucket b = hTable.get(i); b!= null; b = b.next) {
+
+        out.print("[ ");
+
+        for(int j = 0; j < b.nKeys; j++) {
+
+        out.print(b.key[j]+" -> "+b.value[j]+ ", ");
+
         }
 
-        
+        out.print("]");
 
-        out.println ("-------------------------------------------");
- 
+        }
+
+        out.println("");
+
+        }
+
+        out.println ("\n-------------------------------------------");
+
     } // print
 
     /********************************************************************************
@@ -321,7 +293,7 @@ public class LinHashMap <K, V>
      */
     private int h (Object key)
     {
-        return key.hashCode () % mod1;
+        return Math.abs(key.hashCode () % mod1);
     } // h
 
     /********************************************************************************
@@ -331,7 +303,7 @@ public class LinHashMap <K, V>
      */
     private int h2 (Object key)
     {
-        return key.hashCode () % mod2;
+        return Math.abs(key.hashCode () % mod2);
     } // h2
 
     /********************************************************************************
@@ -341,12 +313,9 @@ public class LinHashMap <K, V>
     public static void main (String [] args)
     {
 
-        int totalKeys    = 30;
+        int totalKeys    = 27;
         boolean RANDOMLY = false;
-        Set <Map.Entry <Integer, Integer>> enSet;
-        Map.Entry <Integer,Integer> entry;
-        Iterator enSetIterator;
-        
+
         LinHashMap <Integer, Integer> ht = new LinHashMap <> (Integer.class, Integer.class);
         if (args.length == 1) totalKeys = Integer.valueOf (args [0]);
 
@@ -357,21 +326,11 @@ public class LinHashMap <K, V>
             for (int i = 1; i <= totalKeys; i += 2) ht.put (i, i * i);
         } // if
 
-        //test entry set
-        //enSet=
-        enSet=ht.entrySet();
-        out.println("-----ENTRY SET-----##");
-        enSetIterator=enSet.iterator();
-        while (enSetIterator.hasNext())
-        {
-            entry=(Map.Entry <Integer,Integer>)enSetIterator.next();
-            out.println("("+entry.getKey()+","+entry.getValue()+")");
-        }
-        
         ht.print ();
         for (int i = 0; i <= totalKeys; i++) {
             out.println ("key = " + i + " value = " + ht.get (i));
-        } // for
+        }
+        //
         out.println ("-------------------------------------------");
         out.println(ht.count);
         out.println ("Average number of buckets accessed = " + ht.count / (double) totalKeys);

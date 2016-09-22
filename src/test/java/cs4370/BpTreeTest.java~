@@ -1,0 +1,30 @@
+/****************************************************************************************
+ *@file BpTreeTest.java
+ *
+ *@author Nick Klepp
+ *
+ */
+
+import org.unit.Test;
+import static org.junit.Assert.*;
+import junit.framework.*;
+
+public class BpTreeTest extends TestCase{
+    
+    BpTreeMap <Integer, Integer> bpt; 
+
+    protected void setUp(){
+	int totalKeys = 9;
+	boolean RANDOMLY = false;
+	bpt = new BpTreeMap <> (Integer.class, Integer.class);
+	
+	if (RANDOMLY) {
+	    Random rng = new Random ();
+	    for (int i = 1; i <= totalKeys; i += 2) bpt.put (rng.nextInt (2 * totalKeys), i * i);
+	} else {
+	    for (int i = 1; i <= totalKeys; i += 2) bpt.put (i, i * i);
+	} // if
+    }
+    
+    
+}

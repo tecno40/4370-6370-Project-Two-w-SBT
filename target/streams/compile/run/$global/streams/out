@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0mRunning cs4370.LinHashMap [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/home/nick/6370/Proj2/4370-6370-Project-Two-w-SBT/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/home/nick/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/home/nick/.ivy2/cache/junit/junit/jars/junit-4.12.jar[0m
+[0m[[0mdebug[0m] [0m	/home/nick/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.3.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

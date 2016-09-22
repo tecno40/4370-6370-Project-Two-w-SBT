@@ -1,5 +1,4 @@
-
-
+package cs4370;
 
 /****************************************************************************************
  * @file  Table.java
@@ -65,7 +64,7 @@ public class Table
     /** Index into tuples (maps key to tuple number).
      */
     private final Map <KeyType, Comparable []> index;
-
+    //private final Map<Comparable[], Comparable[]> index;
     //----------------------------------------------------------------------------------
     // Constructors
     //----------------------------------------------------------------------------------
@@ -78,6 +77,7 @@ public class Table
      * @param _domain     the string containing attribute domains (data types)
      * @param _key        the primary key
      */
+    
     public Table (String _name, String [] _attribute, Class [] _domain, String [] _key)
     {
 	name      = _name;
@@ -85,8 +85,9 @@ public class Table
 	domain    = _domain;
 	key       = _key;
 	tuples    = new ArrayList <> ();
-	index     = new TreeMap <> ();       // also try BPTreeMap, LinHashMap or ExtHashMap
-	//index     = new LinHashMap <> (KeyType.class, Comparable [].class);
+	//index     = new TreeMap <> ();       // also try BPTreeMap, LinHashMap or ExtHashMap
+	//index     = new BpTreeMap <> ();
+	index     = new LinHashMap <> (KeyType.class, Comparable [].class);
 	//index = new HashMap<>(KeyType.class, Comparable [].class);
     } // constructor
 
@@ -317,6 +318,7 @@ public class Table
 	for (int i = 0; i<table2Attributes.length; i++){
 	    table2Attributes[i] = table2.attribute[i];
 	}
+	
 	for (String s1 : attribute){
 	    for (int i = 0; i < table2Attributes.length; i++){//String s2 : table2.attribute){
 		if(s1.equals(table2Attributes[i])){
@@ -324,8 +326,10 @@ public class Table
 		}
 	    }
 	}
+	/*return new Table (name + count++, ArrayUtil.concat (attribute, table2Attributes),
+	  ArrayUtil.concat (domain, table2.domain), key, rows);*/
 	return new Table (name + count++, ArrayUtil.concat (attribute, table2Attributes),
-			  ArrayUtil.concat (domain, table2.domain), key, rows);
+			  ArrayUtil.concat (domain, table2.domain), ArrayUtil.concat(attribute,table2Attributes), rows);
     } // join
  
     /************************************************************************************

@@ -4,7 +4,7 @@
 		module="root-4370-6370-project-two-w-sbt_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160902103054"
+		publication="20161014172209"
 	>
 		<description>
 		root-4370-6370-project-two-w-sbt
@@ -35,5 +35,6 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.6" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="junit" name="junit" rev="4.12" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.6" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

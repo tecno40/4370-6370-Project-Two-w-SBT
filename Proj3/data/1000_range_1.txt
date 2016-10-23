@@ -1,0 +1,217 @@
+[0m[[0minfo[0m] [0mSet current project to root-4370-6370-project-two-w-sbt (in build file:/home/nick/6370/Proj2/4370-6370-Project-Two-w-SBT/)[0m
+[0m[[0minfo[0m] [0mRunning cs4370.TestTupleGenerator 1000 1[0m
+Number of tuples in Student : 1000
+Number of tuples in Professor : 1000
+Number of tuples in Course : 1000
+Number of tuples in Teaching : 1000
+Number of tuples in Transcript : 1000
+Timing selects on primary keys
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+adding to successful teaching
+SuccessTimesTeaching: [5478629, 848739, 682005, 276686, 269806, 262780, 696482, 298544, 307788, 310402, 290915, 304358, 277334, 294927, 282546, 271002, 276150, 293001, 272485, 294463, 270022, 267216, 278089, 273282, 268706, 262799, 289013, 271273, 267950, 287471, 282654, 273264, 300794, 267361, 283220, 283611, 277799, 269785, 273449, 264940, 298306, 272011, 291472, 275499, 269243, 301750, 266146, 280129, 291874, 282838, 260552, 221955, 202774, 198248, 198316, 209727, 211739, 186784, 199322, 200265, 208664, 401227, 202276, 199831, 209667, 692949, 223019, 251166, 196295, 196437, 198513, 234090, 173058, 174483, 167242, 161268, 168554, 172337, 172121, 170272, 167326, 166510, 169184, 191486, 168356, 182353, 168370, 169907, 197073, 168254, 162023, 170732, 159248, 261073, 172020, 170002, 194527, 172744, 173537, 165796]
+5478629
+848739
+682005
+276686
+269806
+262780
+696482
+298544
+307788
+310402
+290915
+304358
+277334
+294927
+282546
+271002
+276150
+293001
+272485
+294463
+270022
+267216
+278089
+273282
+268706
+262799
+289013
+271273
+267950
+287471
+282654
+273264
+300794
+267361
+283220
+283611
+277799
+269785
+273449
+264940
+298306
+272011
+291472
+275499
+269243
+301750
+266146
+280129
+291874
+282838
+260552
+221955
+202774
+198248
+198316
+209727
+211739
+186784
+199322
+200265
+208664
+401227
+202276
+199831
+209667
+692949
+223019
+251166
+196295
+196437
+198513
+234090
+173058
+174483
+167242
+161268
+168554
+172337
+172121
+170272
+167326
+166510
+169184
+191486
+168356
+182353
+168370
+169907
+197073
+168254
+162023
+170732
+159248
+261073
+172020
+170002
+194527
+172744
+173537
+165796
+UnSuccessTimesTeaching: 
+SuccessTimesProfessor: 
+UnSuccessTimesProfessor: 
+SuccessTimesStudent: 
+UnSuccessTimesStudent: 
+NaturalJoinTimes: 
+EquiJoinTimes: 
+[0m[[32msuccess[0m] [0mTotal time: 1 s, completed Oct 10, 2016 11:09:10 AM[0m

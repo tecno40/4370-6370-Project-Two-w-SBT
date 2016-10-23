@@ -1,0 +1,1017 @@
+[0m[[0minfo[0m] [0mSet current project to root-4370-6370-project-two-w-sbt (in build file:/home/nick/6370/Proj2/4370-6370-Project-Two-w-SBT/)[0m
+[0m[[0minfo[0m] [0mRunning cs4370.TestTupleGenerator 500 3[0m
+Number of tuples in Student : 500
+Number of tuples in Professor : 500
+Number of tuples in Course : 500
+Number of tuples in Teaching : 500
+Number of tuples in Transcript : 500
+Timing selects on primary keys
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+SuccessTimesTeaching: []
+UnSuccessTimesTeaching: 
+4971123
+155484
+82633
+83091
+79494
+79512
+88848
+68214
+73328
+81550
+78213
+84269
+59642
+60011
+59270
+45921
+58555
+48863
+35374
+44429
+42505
+44757
+311969
+208232
+52000
+65990
+55170
+75876
+58658
+66999
+53908
+65587
+52354
+93516
+41804
+48235
+50731
+47326
+46648
+70529
+47584
+42523
+39623
+49809
+37994
+41195
+38890
+51002
+47393
+45858
+49455
+68573
+44972
+51017
+46266
+48744
+50808
+47113
+44619
+50458
+64481
+49626
+47796
+51277
+51769
+51239
+282674
+52010
+48292
+38368
+52284
+52375
+57842
+51316
+47079
+53815
+61204
+50128
+50625
+51385
+46061
+50454
+42411
+55342
+50433
+48948
+53103
+50406
+48595
+47271
+47986
+57847
+46470
+48481
+40300
+47969
+47719
+55194
+48111
+41198
+SuccessTimesProfessor: 
+UnSuccessTimesProfessor: 
+31731
+34263
+8624
+27422
+13081
+21670
+21534
+7302
+7830
+28435
+11753
+14844
+15884
+34679
+15306
+18112
+14540
+11684
+31656
+52815
+38767
+97063
+5114
+8045
+6496
+6071
+18244
+17347
+5510
+2544
+7572
+8070
+5415
+5317
+5386
+8933
+5576
+11862
+7755
+9384
+5335
+6939
+7154
+6969
+8079
+9247
+6898
+9517
+6105
+10155
+6469
+12445
+7092
+5761
+7219
+9094
+4408
+5903
+6065
+13501
+8525
+7181
+8646
+13227
+5766
+4950
+7350
+7243
+8396
+2736
+8132
+12869
+22169
+7535
+7149
+7783
+3242
+6586
+4032
+7279
+7430
+6314
+7964
+6636
+4770
+8070
+6768
+11026
+8748
+6309
+6753
+6108
+5964
+7850
+5437
+8872
+5060
+5016
+8443
+5311
+SuccessTimesStudent: 
+UnSuccessTimesStudent: 
+352438
+66749
+47112
+38223
+28147
+42683
+35006
+18259
+27794
+21043
+29989
+48264
+28441
+30144
+28143
+7330
+8226
+26781
+43401
+33147
+45575
+9386
+15839
+23529
+17410
+17132
+20001
+9662
+19167
+18483
+18559
+17260
+15723
+20997
+22095
+17302
+22641
+21783
+22152
+23035
+19253
+17394
+15877
+20876
+18992
+23579
+19774
+19453
+19343
+18215
+21900
+49874
+22810
+18047
+18035
+20944
+21613
+20092
+19953
+13428
+23781
+21301
+20263
+21031
+22940
+18400
+25429
+25101
+17779
+18918
+28331
+23910
+13260
+18482
+23980
+25516
+26566
+25836
+39123
+22000
+19789
+20863
+20443
+25750
+24243
+19274
+29522
+21426
+17708
+21790
+18731
+25945
+21299
+23612
+20239
+22024
+21520
+21336
+20384
+20050
+NaturalJoinTimes: 
+37937654
+43780640
+17579270
+15326528
+19308944
+17054429
+15249978
+18373861
+17065621
+14098499
+17451679
+15678069
+13557033
+15627096
+14216407
+12830719
+15556412
+14623108
+12944389
+15365598
+13835108
+13523319
+15434993
+13648125
+12253851
+14036708
+14072383
+13165848
+14454305
+14133989
+12729672
+14561495
+13485181
+12663828
+14077869
+13968651
+12417374
+14532915
+14363662
+12520836
+14372969
+13720092
+12768765
+14463183
+13363623
+12327163
+14515471
+13881739
+12287209
+14381448
+13308899
+12222035
+36431899
+13466781
+13157125
+13618219
+13171346
+13175896
+13857814
+13169032
+13330195
+13605630
+13709634
+13504590
+13848085
+13085596
+12943444
+13797480
+13692049
+13116139
+13529201
+13182146
+13346288
+13985561
+13353189
+13132955
+13862713
+13554691
+13427831
+13835199
+13670897
+13452516
+13843420
+15051854
+13444799
+14050364
+13723299
+13734724
+13982681
+13149271
+12984910
+13687138
+13448023
+12958695
+13616318
+13235743
+13074187
+14066472
+13170238
+13142181
+13616635
+13230766
+13375621
+14251383
+13787967
+13434217
+14060908
+13472075
+13671444
+14328798
+13770958
+13821003
+14701656
+13963775
+13887354
+14319913
+13799119
+13027502
+13926343
+13507058
+13522829
+14207057
+13430669
+13219498
+13887609
+13377861
+13317941
+13731909
+14112573
+13091450
+13648505
+13121850
+13363268
+13605416
+13473703
+13126488
+13442448
+13252359
+13157545
+14631180
+13747113
+13610381
+14291694
+13627444
+13880680
+14594448
+13849369
+13549999
+14287189
+13795836
+14753844
+14358892
+14052117
+13181327
+14631156
+14211644
+13601279
+14192736
+13699444
+13526322
+13990173
+13701935
+13849511
+14231738
+13648661
+13693348
+14498677
+15118175
+13413368
+13958694
+13648490
+13593622
+13999453
+13876106
+13647569
+14344846
+13945206
+13836563
+14210660
+13657814
+13620767
+14135748
+13590768
+13544022
+14311034
+13707527
+13562332
+13992862
+13691723
+13430380
+14020459
+13786724
+13576282
+13996752
+39729738
+13664062
+20947602
+19922108
+17632768
+14990143
+14383022
+13860691
+13829411
+14398343
+13582761
+14268501
+13331848
+13467640
+14589224
+13643412
+14273780
+14169237
+14367807
+13717057
+14187960
+13733751
+13869278
+14243244
+14963687
+13312484
+13682662
+13809124
+14045721
+15334543
+14017166
+13740538
+14238038
+13805020
+13729896
+14177276
+13766392
+13725801
+14051986
+13679591
+13803532
+14236668
+13642258
+13699520
+14392296
+13700153
+13566470
+20720009
+13650219
+13487886
+13927141
+13449640
+13805802
+14163249
+13730591
+14035936
+14248295
+13796073
+13938169
+14244226
+13693728
+13759760
+14225080
+14022030
+13641568
+14328684
+13833801
+13714573
+14310590
+13739293
+14924309
+15011465
+13654890
+13668264
+15158661
+13878036
+13701250
+14145653
+13759647
+13845986
+14272993
+13859151
+13691035
+13868381
+13232426
+14308128
+13946536
+13283506
+13760996
+14512591
+13838049
+13980561
+14272474
+14094498
+14060392
+14648312
+13908461
+13861346
+14324402
+13628010
+13616297
+14525660
+13507058
+13742260
+14498325
+13761565
+EquiJoinTimes: 
+43515118
+18043666
+11946863
+13182844
+11817869
+12941655
+10991063
+11828330
+10951876
+10246285
+10127603
+10217194
+9783751
+10792585
+10251315
+10336313
+10091654
+9817861
+9512038
+10336526
+9334233
+9823299
+9889926
+9923711
+9304600
+10364267
+9424168
+10590948
+9855714
+9878387
+9965783
+9853792
+9298929
+10369283
+9818228
+9860699
+9460758
+10421961
+9528727
+10406912
+9505595
+10339038
+9509697
+10417724
+9475733
+10043057
+9672980
+10040086
+9570697
+10191365
+9428586
+10360636
+9651448
+10338640
+9488447
+10489008
+9469657
+10377351
+9527767
+9996739
+9470837
+10024852
+9555800
+10056876
+9304009
+10170201
+9628374
+10172088
+9350023
+10399432
+9516568
+10506379
+9628788
+10544361
+9744848
+10662335
+9725951
+10717951
+9471054
+10196925
+9514575
+10369137
+9612605
+10518948
+9684596
+10153175
+9654557
+10432027
+9708556
+10452754
+9358964
+10261667
+9350925
+10005570
+9699351
+10559551
+9639636
+10578631
+9566250
+10648418
+9692459
+10742468
+9816921
+10863855
+9622334
+10519260
+9514382
+10461578
+9541484
+10482578
+9554066
+10440102
+9585053
+10777344
+9537046
+10519779
+9502420
+10528768
+9745912
+10791883
+9765691
+10645162
+9799691
+10626462
+9638742
+10483240
+9542355
+10689860
+9501457
+10443134
+9636250
+10257811
+15633978
+11013735
+10025898
+11322993
+10541314
+10425457
+9533884
+10570477
+9622719
+10539066
+10173116
+10516164
+9622922
+10553024
+9682818
+10805834
+9703571
+10662275
+9818490
+10744503
+9702137
+10553844
+9695715
+10525305
+9757141
+10377591
+9721003
+10392831
+9641747
+10614224
+9712601
+10380749
+9573998
+10245800
+9594676
+10668052
+9682333
+10582728
+10109533
+10475946
+9660292
+10435177
+9499451
+10501097
+9557615
+10750039
+9558262
+10451470
+9601376
+11030373
+9604558
+10578795
+9598610
+10479811
+9499355
+16049459
+9436375
+10660650
+9827950
+10690284
+9711965
+10575951
+9620061
+10587698
+9783774
+10594902
+9521050
+10497907
+[0m[[32msuccess[0m] [0mTotal time: 8 s, completed Oct 9, 2016 10:13:39 AM[0m

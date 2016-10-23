@@ -202,7 +202,9 @@ class MovieDB
 	out.println("index print after join");
 	t_join.printIndex();
 	
+	out.println();
 
+	Table t_goodJoin = movie.join("title year","title year",cinema);
 	/*
 	out.println ();
 	Table t_iselectjoin = t_join.select (new KeyType ("7777"));

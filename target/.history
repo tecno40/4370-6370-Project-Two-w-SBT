@@ -182,3 +182,174 @@ exit
 compile
 run-main cs4370.MovieDB
 exit
+compile
+exit
+compile
+clear
+compile
+run
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+exit
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+exit
+compile
+run
+run-main cs430.MovieDB
+run-main cs4370.MovieDB
+exit
+compile
+ 
+compile
+run
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+compile
+run-main cs4370.MovieDB
+exit
+compile
+run-main cs4370.MovieDB
+exit
+compile
+run
+run-main BpTree.java
+run-main cs4370/BpTree.java
+exit
+run-main cs4370/BpTreeMap.java
+run0main src/main/java/cs4370/BpTreeMap.java
+run-main BpTreeMap.java
+run-main cs4370/BpTreeMap.java
+run-main /cs4370/BpTreeMap.java
+run-main java/cs4370/BpTreeMap.java
+run-main /main/java/cs4370/BpTreeMap.java
+run-main main/java/cs4370/BpTreeMap.java
+exit
+run
+run-main cs4370.BpTreeMap.java
+run-main cs4370.BpTreeMap
+exit
+compile
+run cs4370.BpTreeMap
+run-main cs4370.BpTreeMap
+exit
+compile
+run-main cs4370.BpTreeMap
+exit
+compile
+run-main cs4370.BpTreeMap
+exit
+compile
+run-main cs4370.BpTreeMap
+exit
+compile
+run-main cs4370.BpTreeMap
+exit
+run
+exit
+run
+exit
+compile
+run cs4370.TestTupleGenerator
+clear
+exit
+run-main cs4370.TestTupleGenerator
+compile
+run-main
+run
+exit
+run-main cs4370.TestTupleGenerator
+run
+run-main TestTupleGenerator
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+run
+exit
+compile
+run
+exit
+compile
+run
+exit
+compile
+exit
+compile
+run
+ 894288     name590710   deptId153521 894288     name590710   deptId153521 894288     name590710   deptId153521exit
+exit
+compile
+exit
+compile
+run
+exit
+compile
+run
+exit
+run
+exit
+compile
+run
+exit
+compile
+run
+compile
+run
+exit
+compile
+run
+exit
+compile
+run
+run-main cs4370.BpTreeMap
+exit
+compile
+run
+run-main cs4370.BpTreeMap
+exit
+compile
+run
+clear
+run-main cs4370.BpTreeMap
+exit
+run-main cs4370.TestTupleGenerator
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+exit
+compile
+run-main cs4370.TestTupleGenerator 100 1
+exit
+compile
+exit

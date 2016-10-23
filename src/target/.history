@@ -1,0 +1,5 @@
+run-main BpTreeMap.java
+run-main cs4370/BpTreeMap.java
+compile
+run
+exit

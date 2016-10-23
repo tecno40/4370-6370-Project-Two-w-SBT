@@ -1,0 +1,1017 @@
+[0m[[0minfo[0m] [0mSet current project to root-4370-6370-project-two-w-sbt (in build file:/home/nick/6370/Proj2/4370-6370-Project-Two-w-SBT/)[0m
+[0m[[0minfo[0m] [0mRunning cs4370.TestTupleGenerator 1000 1[0m
+Number of tuples in Student : 1000
+Number of tuples in Professor : 1000
+Number of tuples in Course : 1000
+Number of tuples in Teaching : 1000
+Number of tuples in Transcript : 1000
+Timing selects on primary keys
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+adding to unsuccessful professor
+adding to unsuccessful teaching
+SuccessTimesTeaching: []
+UnSuccessTimesTeaching: 
+6634513
+246194
+138469
+151171
+137666
+171809
+106843
+117676
+107879
+113613
+108535
+121753
+106844
+105459
+72892
+75661
+70113
+72598
+79386
+67396
+70066
+65522
+69441
+74913
+85243
+88735
+77366
+69358
+69262
+66119
+70975
+76685
+77234
+69202
+80581
+78474
+80099
+78278
+116983
+93407
+78686
+76837
+98104
+78928
+76788
+77306
+78318
+83862
+86196
+113596
+143731
+110002
+459885
+218032
+156837
+150457
+134539
+137297
+199760
+120812
+114120
+136987
+112021
+139860
+133206
+118670
+117199
+116027
+114251
+146484
+130208
+124878
+134114
+119857
+129774
+132180
+130480
+158267
+113606
+182512
+128461
+108608
+110271
+129481
+61136
+61369
+68386
+67942
+63968
+62641
+78012
+64530
+62060
+60868
+61904
+60965
+62227
+63755
+64857
+61853
+SuccessTimesProfessor: 
+UnSuccessTimesProfessor: 
+10028
+5863
+5011
+4643
+4814
+5655
+4837
+5035
+5246
+5672
+5080
+5627
+5167
+4720
+4563
+4912
+4729
+5014
+4687
+4663
+4673
+4628
+4949
+4682
+5050
+4790
+4842
+4547
+4441
+4466
+4494
+4613
+4642
+4981
+4910
+4989
+4850
+5238
+5955
+6009
+4753
+5026
+5744
+4882
+5077
+4889
+4835
+5357
+5722
+4810
+5742
+4488
+4619
+4508
+4393
+4412
+19322
+4534
+4647
+5041
+4759
+5348
+4370
+20229
+4946
+4799
+4650
+4667
+4597
+5487
+5320
+4676
+4747
+4931
+4507
+5428
+4762
+5296
+4532
+4933
+4695
+4985
+4993
+5155
+4523
+4790
+4768
+4535
+4452
+4879
+4842
+4829
+4585
+4386
+4623
+4620
+4620
+4349
+4890
+4510
+SuccessTimesStudent: 
+UnSuccessTimesStudent: 
+132540
+15253
+7987
+8079
+10335
+13839
+11266
+9983
+14625
+11486
+11213
+11138
+9849
+9871
+9475
+9169
+9015
+11221
+9654
+9715
+9149
+8598
+9685
+9468
+10486
+10092
+12502
+10199
+9639
+9041
+9461
+10788
+11120
+10206
+10749
+12439
+10818
+13523
+12663
+15555
+11856
+11657
+12198
+11493
+12696
+12433
+13944
+12359
+14882
+12933
+14826
+12185
+12286
+13216
+13435
+12659
+13655
+13649
+13015
+12301
+14144
+12143
+12258
+14113
+12732
+13406
+13084
+12516
+13216
+15526
+13894
+13352
+13662
+14792
+13232
+16066
+14417
+13875
+14143
+16494
+13695
+13374
+13764
+12885
+12860
+12579
+12324
+13072
+12668
+15138
+16160
+14797
+13693
+14176
+15152
+14679
+13444
+14688
+16452
+14751
+NaturalJoinTimes: 
+76122344
+80819883
+57407100
+48073947
+56095728
+54499575
+48335175
+56239968
+54393544
+48112693
+55162597
+53302759
+47000097
+53762420
+52739865
+46896619
+54395923
+52958077
+47832441
+55554113
+53330585
+46858396
+54342745
+53025449
+46620871
+54182242
+52414571
+47077430
+53577574
+52522793
+46649738
+53101904
+53769852
+46304496
+53980808
+53554966
+46649583
+53397520
+52051208
+50912938
+52877980
+51575731
+51061169
+52001415
+51814902
+51381166
+52259843
+51829464
+50831081
+52290382
+51688785
+50918027
+52419452
+52407157
+50179749
+52055116
+51568644
+50646481
+52604976
+51519558
+50451719
+52404735
+51533308
+50651791
+52794407
+52031281
+50326560
+52131353
+51575024
+51054136
+52491139
+51732931
+50807193
+52412435
+51681745
+50482628
+52331146
+51653510
+50262546
+52347792
+51948389
+51264926
+52133811
+51814591
+50425937
+52019527
+51543662
+50048107
+52360397
+51627806
+50282763
+52570949
+52260407
+50080088
+52555386
+52011067
+50133143
+52039590
+51671190
+50966828
+52111360
+52080908
+50608208
+51972829
+51685503
+50041834
+52545361
+53363633
+51515292
+52550662
+51776736
+50946824
+52561868
+52222024
+51331295
+53122573
+52497844
+51174731
+52449641
+51795208
+55754392
+52569267
+51806911
+50829258
+53381970
+53064512
+51761839
+52704185
+52794978
+50849565
+52777885
+52196035
+50667924
+52935366
+52590336
+50569685
+52405836
+51767627
+51215034
+53343798
+52065559
+50925697
+53458592
+52508603
+66140337
+53083848
+52485593
+51031417
+53264549
+52871727
+52539419
+53497835
+52553891
+51815657
+53667035
+51977112
+51264992
+52171100
+51883239
+52144348
+53769799
+53354294
+52025118
+52920447
+52516997
+52496520
+53244540
+51879235
+51854612
+52984782
+51658026
+52384038
+53771348
+52209364
+50748678
+52346349
+52239087
+52129803
+52624984
+51917491
+52327914
+53657636
+53226921
+53060073
+52268500
+52122519
+51700634
+53101599
+52529991
+52357603
+53067669
+52735239
+52075765
+53320093
+52283434
+52573233
+53744769
+54458756
+52403277
+52506293
+52135331
+51518653
+52214495
+51889726
+53471666
+54114514
+53481393
+52744490
+57995761
+53880652
+53245865
+53782755
+52197008
+52654435
+53076882
+51896815
+52442644
+52440244
+51734594
+50637840
+53329597
+52870721
+51505063
+52296923
+52407974
+52071482
+52642206
+52399321
+51565264
+52524343
+52294357
+51568851
+52616348
+52011698
+51710201
+52753048
+53226642
+51872539
+53024239
+53146036
+52365215
+52575981
+52044015
+51657147
+53029286
+51916272
+51606083
+52643206
+53150229
+52104957
+70448191
+52286765
+51966523
+52902448
+52556260
+51503075
+53564348
+52412961
+51299818
+53315678
+51940371
+51172550
+53087614
+52181798
+50362071
+52321069
+51897706
+51811337
+54865011
+53839874
+53413931
+53419475
+51941662
+51217859
+52736140
+52609963
+51575095
+52378935
+52114101
+51260380
+52332912
+51763261
+51165958
+52239239
+51824307
+50607264
+52408902
+52280220
+50981413
+52811191
+51762226
+50625036
+52381154
+51895087
+50174944
+52190599
+51770501
+50505524
+52588325
+52850841
+EquiJoinTimes: 
+84469313
+42507910
+38477845
+38991118
+36877375
+37757322
+36905755
+37784625
+35974694
+37666978
+36318736
+37816349
+35674084
+37576891
+36282958
+37343179
+35478874
+37498050
+36050619
+36829497
+34909019
+37226637
+36004033
+37717775
+35928180
+36544223
+62555900
+37404379
+36477287
+37179735
+36478840
+37024711
+36282835
+37139810
+36211922
+37046823
+36450533
+37217279
+36409926
+37484278
+36824123
+36943073
+36112201
+36953177
+36525670
+36939243
+36294415
+37163218
+36286482
+37310386
+36492797
+37090008
+36444683
+37015812
+36244947
+37078123
+36223101
+37070881
+36230288
+36932160
+36229684
+37121453
+36440085
+37289757
+37716177
+37001765
+36208598
+37033009
+38663711
+37002453
+36244703
+37091989
+36690853
+37263977
+36687681
+37449207
+36863250
+37492232
+36774059
+37599074
+36507992
+37176628
+36345685
+37090638
+36837849
+37677577
+36796571
+37300591
+36574364
+37104055
+37762288
+37271115
+36298665
+37126809
+36635335
+37581985
+36967287
+37538424
+35732236
+38562049
+36455579
+39250602
+35668114
+38711571
+35648475
+38440872
+36056978
+38855404
+36368466
+39602096
+35643094
+39288706
+35805076
+39321502
+35713371
+41111467
+35971717
+38516369
+36247213
+39466539
+35722437
+39650076
+36029281
+39928543
+36106990
+38967763
+35808531
+38741149
+36643648
+38695671
+35832933
+39059165
+35970887
+39065015
+35866991
+38529557
+36440522
+40466047
+36619813
+39447809
+36468201
+39876527
+36081324
+39384441
+35936641
+38798201
+35708490
+38671000
+36330042
+40273994
+36085617
+38868862
+36108456
+38911701
+35842906
+38722220
+36086424
+38812220
+36437374
+41757173
+36036000
+39257645
+35715880
+39049993
+35688199
+38551491
+36064174
+39217368
+36406109
+37614276
+35871301
+37325374
+35981262
+37216424
+35724040
+36960757
+36042319
+36951252
+36872361
+37925269
+36337314
+37996857
+35917206
+37210846
+35896473
+38188949
+35712418
+37550410
+39739583
+36899853
+36248047
+37050605
+36088732
+37871104
+35562918
+36938169
+35579612
+37202665
+35560160
+36986535
+[0m[[32msuccess[0m] [0mTotal time: 24 s, completed Oct 9, 2016 10:14:03 AM[0m

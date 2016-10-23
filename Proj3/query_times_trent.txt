@@ -1,0 +1,25 @@
+All times were averaged over 10 trials
+
+MySql- Query 3
+Un-optimized: 53.074 ms 
+Optimization 1: 49.76ms
+Optimization 2: 49.84ms
+Optimization 1 w/ Indexing: 1.46ms
+
+MySql- Query 6
+Un-optimized: 102,744.1 ms
+Optimization 1: 223.461 ms
+Optimization 2: 200.968 ms
+Optimizaiton 2 w/ Indexing: 134.75ms
+
+Postgres- Query 3
+Un-optimized: 10.58ms
+Optimization 1: 4.6219 ms
+Optimization 2: 4.1275 ms
+Optimization 2 w/ Indexing: 2.259 ms
+
+Postgres- Query 6
+Un-optimized: 11,113.84 ms
+Optimized 1: 23.81 ms
+Optimized 2: 23.41 ms
+Optimization 2 w/Indexing: 27.7764 ms

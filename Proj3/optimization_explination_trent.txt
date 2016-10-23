@@ -1,0 +1,18 @@
+Query 3- Optimization 1
+	For my first optimization of query 3 I moved the course code select from above the student & transcript join to above the transcript table (before the join). This signifigantly reduced the number of tuples that needed to be joined from the transcript table.
+
+Query 3- Optimization 2
+	For my second optimization I added a project studentId between the data from the transcript table and the join hoping it would reduce the number of tuples as many tuples may have duplicate ids. This operation ended up being slower in MySql (likely due to the cost of completing another operation) and was not effective in Postgres.
+
+Query 3- Indexing 
+	Finally I added a index to student.id and transcript.studentId, this was highly effective in both MySql and Postgres.
+
+
+
+
+Query 6- Optimization 1
+	For the first optimization I re-wrote the query and was able to remove two joins and two selects. This provided a massive improvement to the query.
+Query 6- Optimization 2
+	For my second optimization I attempted to move a course code project from above the course code minus to above the transcript table (and below the minus). I did this in order to remove any tuples wth duplicate course code ids. This changed proved to be minimally effective in both MySql and Postgres.
+Query 6- Indexing
+	For my final optimization I added an index to student.id, transcript.studentId, transcript.crsCode, and couse.courseCode. This proved to be highly effective in MySql and uneffective in Postgres. I was unable to determine why indexing did not benefit the query in postgres.

@@ -79,12 +79,13 @@ class MovieDB
 	Table studio = new Table ("studio", "name address presNo",
 	"String String Integer", "name");*/
 
-	Table movie = new Table("movie",attributes_movie,domains_movie,key_movie);
-	Table cinema = new Table("cinema",attributes_cinema,domains_cinema,key_cinema);
-	Table movieStar = new Table("movieStar",attributes_movieStar,domains_movieStar,key_movieStar);
-	Table starsIn = new Table("starsIn",attributes_starsIn,domains_starsIn,key_starsIn);
-	Table movieExec = new Table("movieExec",attributes_movieExec,domains_movieExec,key_movieExec);
-	Table studio = new Table("studio",attributes_studio,domains_studio,key_studio);
+        
+	Table movie = new Table("movie",attributes_movie,domains_movie,key_movie,1);
+	Table cinema = new Table("cinema",attributes_cinema,domains_cinema,key_cinema,1);
+	Table movieStar = new Table("movieStar",attributes_movieStar,domains_movieStar,key_movieStar,1);
+	Table starsIn = new Table("starsIn",attributes_starsIn,domains_starsIn,key_starsIn,1);
+	Table movieExec = new Table("movieExec",attributes_movieExec,domains_movieExec,key_movieExec,1);
+	Table studio = new Table("studio",attributes_studio,domains_studio,key_studio,1);
 
 	Comparable [] film0 = { "Star_Wars", 1977, 124, "sciFi", "Fox", 12345 };
 	Comparable [] film1 = { "Star_Wars_2", 1980, 124, "sciFi", "Fox", 12345 };
